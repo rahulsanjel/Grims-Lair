@@ -1,196 +1,545 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name ="viewport" content="width=device-width,initial-scale=1.0"/>
-        <title> GR!M's Lair </title>
-        <link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    </head>
-    <body>
-        <nav>
-            <ul class="navbar">
-                <li class="logo"><a href="#home">GRIM's LAIR</a></li>
-                <li class="search">
-                <form class="search-form">
-                <i class="fas fa-search"></i>
-                <input type="text" placeholder="Search" />
-                </form>
-                </li>
-                <li><a href ="#games">Explore Games</a></li>
-                <li><a href ="#newswire">Newswire</a></li>
-                <li><a href ="#community">Community</a></li>
-                <li><a href ="#store">Store</a></li>
-                <li><a href="#login" class="btn-login"><i class="fas fa-user"></i> Sign In</a></li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GR!M's Lair</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
 
-            </ul>
-        </nav>
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="logo">GR!M<span>'S</span> LAIR</a>
 
-        <section class="featured">
-            <img src="https://images4.alphacoders.com/115/thumb-1920-1151249.jpg" alt="featured"/>
-        </section>
-        <section id="games">
-        <h2>Explore Games</h2>
-            <p>Discover new titles, hidden gems, and all your next favorite games in one place.<br>
-                 Start exploring and find your next great play!</p>
-            <div class ="game-grid">
-                <div class="game-card">
-                    <img src ="https://4kwallpapers.com/images/walls/thumbs_3t/20173.jpg" alt="Game1"/>
-                </div>
-                <div class="game-card">
-                    <img src ="https://4kwallpapers.com/images/walls/thumbs_3t/22472.jpg" alt="Game2"/>
-                     
-                </div>
-                <div class="game-card">
-                    <img src ="https://4kwallpapers.com/images/walls/thumbs_3t/21659.jpg" alt="Game3"/> 
-                </div>                
-                <div class="game-card">
-                    <img src ="https://4kwallpapers.com/images/walls/thumbs_3t/22311.jpg" alt="Game4"/>
-                </div>
-                <div class="game-card">
-                    <img src ="https://4kwallpapers.com/images/walls/thumbs_3t/22467.jpg" alt="Game5"/>
-                </div>
-                <div class="game-card">
-                    <img src ="https://4kwallpapers.com/images/walls/thumbs_3t/21671.jpg" alt="Game6"/>
-                </div>    
-                <div class="game-card">
-                    <img src ="https://4kwallpapers.com/images/walls/thumbs_3t/16763.jpg" alt="Game7"/> 
-                </div>                
-                <div class="game-card">
-                    <img src ="https://4kwallpapers.com/images/walls/thumbs_3t/21662.jpg" alt="Game8"/>
-                </div>
-                <div class="game-card">
-                    <img src ="https://4kwallpapers.com/images/walls/thumbs_3t/21378.jpg" alt="Game9"/>
-                </div>
-                <div class="game-card">
-                    <img src ="https://4kwallpapers.com/images/walls/thumbs_3t/21352.jpg" alt="Game10"/>
-                </div>
-                <div class="game-card">
-                    <img src ="https://4kwallpapers.com/images/walls/thumbs_3t/19072.jpg" alt="Game11"/>
-                </div>
-                <div class="game-card">
-                    <img src ="https://4kwallpapers.com/images/walls/thumbs_3t/21475.jpeg" alt="Game12"/>
-                </div>                                                           
-            </div>    
-        </section>
+      <div class="search-wrap" id="searchWrap">
+        <i class="fas fa-search"></i>
+        <input type="text" id="searchInput" placeholder="Search games, news…" autocomplete="off" />
+        <div class="search-results" id="searchResults"></div>
+      </div>
 
-        <section id="newswire">
-            <h2>Newswire</h2>
-            <p>Stay up-to-date with the latest gaming news!<br>
-                 From new releases to exclusive updates and industry buzz, Newswire keeps you in the loop on everything gaming.</p>
+      <ul class="nav-links">
+        <li><a href="#games">Games</a></li>
+        <li><a href="#newswire">Newswire</a></li>
+        <li><a href="#community">Community</a></li>
+        <li><a href="#store">Store</a></li>
+      </ul>
 
-            <div class="news-grid">
-                <div class="news-card">
-                    <img src="https://4kwallpapers.com/images/walls/thumbs_3t/19048.jpg" alt="News1" />
-                    <div class="news-text">
-                        <h3>Ghost of Yōtei Gets New Story Info, Commits to 2025 Release Date</h3>
-                        <p>TGhost of Yōtei reveals exciting new story details, promising a deep and immersive narrative set in a hauntingly beautiful world. 
-                            The game also officially confirms its release for 2025, giving fans plenty to look forward to.
-                            </p>
-                    </div>
-                </div>
-               
-                <div class="news-card">
-                    <img src="https://4kwallpapers.com/images/walls/thumbs_3t/16282.jpg" alt="News2" />
-                    <div class="news-text">
-                        <h3>Cyberpunk 2077 Sequel Cyberpunk 2 Enters Pre-Production</h3>
-                        <p>Several weeks ago the CD Projekt Red team responsible for the next big game set in the Cyberpunk universe completed the project’s conceptual phase," 
-                            CD Projekt said.
-                            </p>
-                    </div>
-                </div>
+      <div class="nav-actions">
+        <button class="icon-btn" id="cartBtn" aria-label="Cart">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="badge" id="cartBadge">0</span>
+        </button>
+        <button class="btn-login" id="loginBtn"><i class="fas fa-user"></i> Sign In</button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
 
-                <div class="news-card">
-                    <img src="https://4kwallpapers.com/images/walls/thumbs_3t/15106.jpg" alt="News3" />
-                    <div class="news-text">
-                        <h3>League of Legends Fans Not Happy About Uzi Kai'Sa Skin Price</h3>
-                        <p>Fans of League of Legends are voicing their discontent about one of the newest World Championship skins coming to the game, 
-                            with the Kai'Sa outfit sporting an exorbitant price point. </p>
-                    </div>
-                </div>
-                <a href="#seemore" class="btn-more">See More</a>
-            </div>
-              
-        </section>
-        <section id="community">
-            <h2>Community</h2>
-            <p>Join the heart of our gaming world!<br>
-                Connect with fellow players, share your passion, and dive into discussions, fan creations, and events.<br>
-                Whether you’re here to make new friends or show off your skills, the Community is your place to belong and be heard.</p>
-        </section>
-        
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#games" class="mob-link">Games</a>
+      <a href="#newswire" class="mob-link">Newswire</a>
+      <a href="#community" class="mob-link">Community</a>
+      <a href="#store" class="mob-link">Store</a>
+    </div>
+  </nav>
 
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-slides">
+      <div class="hero-slide active" style="background-image: url('https://images4.alphacoders.com/115/thumb-1920-1151249.jpg')"></div>
+      <div class="hero-slide" style="background-image: url('https://4kwallpapers.com/images/walls/thumbs_3t/22472.jpg')"></div>
+      <div class="hero-slide" style="background-image: url('https://4kwallpapers.com/images/walls/thumbs_3t/21659.jpg')"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Welcome to the Lair</p>
+      <h1 class="hero-title">PLAY <span class="accent">HARD.</span><br>DIE TRYING.</h1>
+      <p class="hero-sub">Your underground hub for games, news, and the community that never sleeps.</p>
+      <div class="hero-btns">
+        <a href="#games" class="btn-primary"><i class="fas fa-gamepad"></i> Explore Games</a>
+        <a href="#newswire" class="btn-ghost">Latest News</a>
+      </div>
+    </div>
+    <div class="hero-dots" id="heroDots"></div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
 
-        <section id="store">
-            <h2>Store</h2>
-            <p>Gear up, show your fandom, and grab the latest drops right here!</p>
+  <!-- GAMES -->
+  <section id="games">
+    <div class="section-header">
+      <p class="section-eyebrow">Browse the Collection</p>
+      <h2>Explore <span class="accent">Games</span></h2>
+      <p class="section-sub">Discover new titles, hidden gems, and all your next favorite games in one place.</p>
+    </div>
 
-            <div class="store-scroll-wrapper">
-                <div class="store-grid">
-                    <div class="store-card">
-                        <img src="https://www.fangamer.com/cdn/shop/files/product_mondo_SH4_vinyl_main.png?crop=center&height=600&v=1704749949&width=900" alt="item-1" />
-                        <div class="store-details">
-                            <h3>Silent Hill 4:<br> The Room Vinyl Soundtrack</h3>
-                            <p class="price">$39.99</p>
-                            <button class="btn-buy"><i class="fas fa-bolt"></i>Buy Now</button>
-                        </div>
-                    </div>
-                    <div class="store-card">
-                        <img src="https://www.fangamer.com/cdn/shop/files/product_wayo_bayonetta_vinyl_box_set_main.png?crop=center&height=600&v=1706133870&width=900" alt="item-2" />
-                        <div class="store-details">
-                            <h3>Bayonetta Vinyl<br> Soundtrack Box Set</h3>
-                            <p class="price">$39.99</p>
-                            <button class="btn-buy"><i class="fas fa-bolt"></i>Buy Now</button>
-                        </div>
-                    </div>
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="action">Action</button>
+      <button class="filter-btn" data-filter="rpg">RPG</button>
+      <button class="filter-btn" data-filter="horror">Horror</button>
+      <button class="filter-btn" data-filter="indie">Indie</button>
+    </div>
 
-                    <div class="store-card">
-                        <img src="https://cdn.shopify.com/s/files/1/0014/1962/files/pizza-main-fs8.png?v=1744136029" alt="item-3" />
-                        <div class="store-details">
-                            <h3>Pizza Tower for Nintendo Switch™<br> Collector's Edition</h3>
-                            <p class="price">$79.99</p>
-                            <button class="btn-buy"><i class="fas fa-bolt"></i>Buy Now</button>
-                        </div>
-                    </div>
-                    <div class="store-card">
-                        <img src="https://www.fangamer.com/cdn/shop/files/product_hades_cthonic_gods_poster_main.png?crop=center&height=600&v=1720541290&width=900" alt="item-4" />
-                        <div class="store-details">
-                            <h3>Chthonic Gods Poster</h3>
-                            <p class="price">$24.99</p>
-                            <button class="btn-buy"><i class="fas fa-bolt"></i> Buy Now</button>
-                        </div>
-                    </div>
-                    <div class="store-card">
-                        <img src="https://www.fangamer.com/cdn/shop/products/product_HK_mini_figurines_main.png?crop=center&height=600&v=1661370498&width=900" alt="item-5" />
-                        <div class="store-details">
-                            <h3>Hollow Knight Mini Figurines</h3>
-                            <p class="price">$88.99</p>
-                            <button class="btn-buy"><i class="fas fa-bolt"></i> Buy Now</button>
-                        </div>
-                    </div>
-                    <div class="store-card">
-                        <img src="https://www.fangamer.com/cdn/shop/files/product_StP_nightmares_embrace_longsleeve_main.png?crop=center&height=600&v=1737667131&width=900" alt="item-6" />
-                        <div class="store-details">
-                            <h3>Slay the Princess:<br>Nightmare's Embrace</h3>
-                            <p class="price">$44.99</p>
-                            <button class="btn-buy"><i class="fas fa-bolt"></i> Buy Now</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-                
-            </div>
-        </section>        
-    </body>
-    <footer class="footer">
-        <div class="footer-content">
-            <p>&copy; 2025 GRIM's LAIR. All rights reserved.</p>
-            <p>Follow us on:
-                <a href="#">Twitter</a> |
-                <a href="#">Instagram</a> |
-                <a href="#">Discord</a>
-            </p>
+    <div class="game-grid" id="gameGrid">
+      <div class="game-card reveal" data-cat="action">
+        <img src="https://4kwallpapers.com/images/walls/thumbs_3t/20173.jpg" alt="Ghost of Tsushima" loading="lazy"/>
+        <div class="game-card-overlay">
+          <span class="game-tag">Action</span>
+          <h3>Ghost of Tsushima</h3>
+          <div class="game-card-actions">
+            <button class="btn-wishlist" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+            <button class="btn-card-buy">Add to Cart</button>
+          </div>
         </div>
-    </footer>
+      </div>
+      <div class="game-card reveal" data-cat="rpg">
+        <img src="https://4kwallpapers.com/images/walls/thumbs_3t/22472.jpg" alt="Elden Ring" loading="lazy"/>
+        <div class="game-card-overlay">
+          <span class="game-tag">RPG</span>
+          <h3>Elden Ring</h3>
+          <div class="game-card-actions">
+            <button class="btn-wishlist" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+            <button class="btn-card-buy">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="game-card reveal" data-cat="action">
+        <img src="https://4kwallpapers.com/images/walls/thumbs_3t/21659.jpg" alt="Sekiro" loading="lazy"/>
+        <div class="game-card-overlay">
+          <span class="game-tag">Action</span>
+          <h3>Sekiro</h3>
+          <div class="game-card-actions">
+            <button class="btn-wishlist" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+            <button class="btn-card-buy">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="game-card reveal" data-cat="rpg">
+        <img src="https://4kwallpapers.com/images/walls/thumbs_3t/22311.jpg" alt="Baldur's Gate 3" loading="lazy"/>
+        <div class="game-card-overlay">
+          <span class="game-tag">RPG</span>
+          <h3>Baldur's Gate 3</h3>
+          <div class="game-card-actions">
+            <button class="btn-wishlist" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+            <button class="btn-card-buy">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="game-card reveal" data-cat="action">
+        <img src="https://4kwallpapers.com/images/walls/thumbs_3t/22467.jpg" alt="Spider-Man 2" loading="lazy"/>
+        <div class="game-card-overlay">
+          <span class="game-tag">Action</span>
+          <h3>Spider-Man 2</h3>
+          <div class="game-card-actions">
+            <button class="btn-wishlist" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+            <button class="btn-card-buy">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="game-card reveal" data-cat="horror">
+        <img src="https://4kwallpapers.com/images/walls/thumbs_3t/21671.jpg" alt="Alan Wake 2" loading="lazy"/>
+        <div class="game-card-overlay">
+          <span class="game-tag">Horror</span>
+          <h3>Alan Wake 2</h3>
+          <div class="game-card-actions">
+            <button class="btn-wishlist" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+            <button class="btn-card-buy">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="game-card reveal" data-cat="rpg">
+        <img src="https://4kwallpapers.com/images/walls/thumbs_3t/16763.jpg" alt="The Witcher 3" loading="lazy"/>
+        <div class="game-card-overlay">
+          <span class="game-tag">RPG</span>
+          <h3>The Witcher 3</h3>
+          <div class="game-card-actions">
+            <button class="btn-wishlist" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+            <button class="btn-card-buy">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="game-card reveal" data-cat="action">
+        <img src="https://4kwallpapers.com/images/walls/thumbs_3t/21662.jpg" alt="God of War" loading="lazy"/>
+        <div class="game-card-overlay">
+          <span class="game-tag">Action</span>
+          <h3>God of War</h3>
+          <div class="game-card-actions">
+            <button class="btn-wishlist" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+            <button class="btn-card-buy">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="game-card reveal" data-cat="indie">
+        <img src="https://4kwallpapers.com/images/walls/thumbs_3t/21378.jpg" alt="Hades" loading="lazy"/>
+        <div class="game-card-overlay">
+          <span class="game-tag">Indie</span>
+          <h3>Hades</h3>
+          <div class="game-card-actions">
+            <button class="btn-wishlist" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+            <button class="btn-card-buy">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="game-card reveal" data-cat="horror">
+        <img src="https://4kwallpapers.com/images/walls/thumbs_3t/21352.jpg" alt="Resident Evil 4" loading="lazy"/>
+        <div class="game-card-overlay">
+          <span class="game-tag">Horror</span>
+          <h3>Resident Evil 4</h3>
+          <div class="game-card-actions">
+            <button class="btn-wishlist" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+            <button class="btn-card-buy">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="game-card reveal" data-cat="indie">
+        <img src="https://4kwallpapers.com/images/walls/thumbs_3t/19072.jpg" alt="Hollow Knight" loading="lazy"/>
+        <div class="game-card-overlay">
+          <span class="game-tag">Indie</span>
+          <h3>Hollow Knight</h3>
+          <div class="game-card-actions">
+            <button class="btn-wishlist" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+            <button class="btn-card-buy">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="game-card reveal" data-cat="indie">
+        <img src="https://4kwallpapers.com/images/walls/thumbs_3t/21475.jpeg" alt="Celeste" loading="lazy"/>
+        <div class="game-card-overlay">
+          <span class="game-tag">Indie</span>
+          <h3>Celeste</h3>
+          <div class="game-card-actions">
+            <button class="btn-wishlist" title="Add to Wishlist"><i class="far fa-heart"></i></button>
+            <button class="btn-card-buy">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSWIRE -->
+  <section id="newswire">
+    <div class="section-header">
+      <p class="section-eyebrow">Hot Off the Press</p>
+      <h2>News<span class="accent">wire</span></h2>
+      <p class="section-sub">Stay locked in — from exclusives to industry shakeups, we've got the feed.</p>
+    </div>
+
+    <div class="news-grid">
+      <article class="news-card reveal featured-news">
+        <div class="news-img-wrap">
+          <img src="https://4kwallpapers.com/images/walls/thumbs_3t/19048.jpg" alt="Ghost of Yotei" loading="lazy"/>
+          <span class="news-label">Exclusive</span>
+        </div>
+        <div class="news-text">
+          <span class="news-date"><i class="far fa-clock"></i> June 2025</span>
+          <h3>Ghost of Yōtei Gets New Story Info, Commits to 2025 Release Date</h3>
+          <p>Ghost of Yōtei reveals exciting new story details, promising a deep and immersive narrative set in a hauntingly beautiful world. The game officially confirms its release for 2025, giving fans plenty to look forward to.</p>
+          <a href="#" class="news-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="news-card reveal">
+        <div class="news-img-wrap">
+          <img src="https://4kwallpapers.com/images/walls/thumbs_3t/16282.jpg" alt="Cyberpunk 2" loading="lazy"/>
+          <span class="news-label">Industry</span>
+        </div>
+        <div class="news-text">
+          <span class="news-date"><i class="far fa-clock"></i> May 2025</span>
+          <h3>Cyberpunk 2 Officially Enters Pre-Production at CD Projekt Red</h3>
+          <p>The team responsible for the next big game in the Cyberpunk universe has completed the project's conceptual phase and is now moving forward.</p>
+          <a href="#" class="news-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
+
+      <article class="news-card reveal">
+        <div class="news-img-wrap">
+          <img src="https://4kwallpapers.com/images/walls/thumbs_3t/15106.jpg" alt="League of Legends" loading="lazy"/>
+          <span class="news-label">Community</span>
+        </div>
+        <div class="news-text">
+          <span class="news-date"><i class="far fa-clock"></i> May 2025</span>
+          <h3>League of Legends Fans Furious Over Uzi Kai'Sa Skin Pricing</h3>
+          <p>Fans are voicing serious discontent about the newest World Championship skin, with the Kai'Sa outfit sporting an exorbitant price point that has the community divided.</p>
+          <a href="#" class="news-read-more">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </article>
+    </div>
+
+    <div class="news-footer">
+      <a href="#" class="btn-outline">View All Stories <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </section>
+
+  <!-- COMMUNITY -->
+  <section id="community">
+    <div class="community-bg"></div>
+    <div class="community-inner">
+      <div class="section-header">
+        <p class="section-eyebrow">Find Your People</p>
+        <h2>Com<span class="accent">munity</span></h2>
+        <p class="section-sub">Connect with fellow players, share your passion, and dive into discussions, fan creations, and live events.</p>
+      </div>
+
+      <div class="community-cards">
+        <div class="comm-card reveal">
+          <div class="comm-icon"><i class="fas fa-comments"></i></div>
+          <h3>Forums</h3>
+          <p>Dive deep into game discussion, lore theories, and hot takes with players who get it.</p>
+          <a href="#" class="btn-comm">Join the Talk</a>
+        </div>
+        <div class="comm-card reveal">
+          <div class="comm-icon"><i class="fas fa-trophy"></i></div>
+          <h3>Events</h3>
+          <p>Weekly tournaments, community challenges, and exclusive giveaways. Don't miss the action.</p>
+          <a href="#" class="btn-comm">See Events</a>
+        </div>
+        <div class="comm-card reveal">
+          <div class="comm-icon"><i class="fas fa-palette"></i></div>
+          <h3>Fan Creations</h3>
+          <p>Fan art, mods, cosplay, and more. Show off your creativity or discover others' work.</p>
+          <a href="#" class="btn-comm">Explore</a>
+        </div>
+        <div class="comm-card reveal">
+          <div class="comm-icon"><i class="fab fa-discord"></i></div>
+          <h3>Discord</h3>
+          <p>Join our live server — get real-time alerts, find teammates, and hang with the crew.</p>
+          <a href="#" class="btn-comm">Join Server</a>
+        </div>
+      </div>
+
+      <div class="community-stats">
+        <div class="stat">
+          <span class="stat-num" data-target="420000">0</span>
+          <span class="stat-label">Members</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="12000">0</span>
+          <span class="stat-label">Active Today</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="850">0</span>
+          <span class="stat-label">Events Hosted</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="96">0</span>
+          <span class="stat-label">Countries</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORE -->
+  <section id="store">
+    <div class="section-header">
+      <p class="section-eyebrow">Official Merch</p>
+      <h2>The <span class="accent">Store</span></h2>
+      <p class="section-sub">Gear up, show your fandom, and grab the latest drops right here.</p>
+    </div>
+
+    <div class="store-track-wrap">
+      <button class="store-arrow left" id="storeLeft"><i class="fas fa-chevron-left"></i></button>
+      <div class="store-track" id="storeTrack">
+        <div class="store-card reveal">
+          <div class="store-img-wrap">
+            <img src="https://www.fangamer.com/cdn/shop/files/product_mondo_SH4_vinyl_main.png?crop=center&height=600&v=1704749949&width=900" alt="Silent Hill 4 Vinyl" loading="lazy"/>
+            <span class="store-badge">New</span>
+          </div>
+          <div class="store-details">
+            <h3>Silent Hill 4: The Room Vinyl Soundtrack</h3>
+            <p class="price">$39.99</p>
+            <button class="btn-buy" data-name="Silent Hill 4 Vinyl" data-price="39.99"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+        <div class="store-card reveal">
+          <div class="store-img-wrap">
+            <img src="https://www.fangamer.com/cdn/shop/files/product_wayo_bayonetta_vinyl_box_set_main.png?crop=center&height=600&v=1706133870&width=900" alt="Bayonetta Vinyl" loading="lazy"/>
+          </div>
+          <div class="store-details">
+            <h3>Bayonetta Vinyl Soundtrack Box Set</h3>
+            <p class="price">$39.99</p>
+            <button class="btn-buy" data-name="Bayonetta Vinyl Box Set" data-price="39.99"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+        <div class="store-card reveal">
+          <div class="store-img-wrap">
+            <img src="https://cdn.shopify.com/s/files/1/0014/1962/files/pizza-main-fs8.png?v=1744136029" alt="Pizza Tower" loading="lazy"/>
+            <span class="store-badge hot">Hot</span>
+          </div>
+          <div class="store-details">
+            <h3>Pizza Tower for Nintendo Switch™ Collector's Edition</h3>
+            <p class="price">$79.99</p>
+            <button class="btn-buy" data-name="Pizza Tower Collector's Edition" data-price="79.99"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+        <div class="store-card reveal">
+          <div class="store-img-wrap">
+            <img src="https://www.fangamer.com/cdn/shop/files/product_hades_cthonic_gods_poster_main.png?crop=center&height=600&v=1720541290&width=900" alt="Hades Poster" loading="lazy"/>
+          </div>
+          <div class="store-details">
+            <h3>Chthonic Gods Poster</h3>
+            <p class="price">$24.99</p>
+            <button class="btn-buy" data-name="Chthonic Gods Poster" data-price="24.99"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+        <div class="store-card reveal">
+          <div class="store-img-wrap">
+            <img src="https://www.fangamer.com/cdn/shop/products/product_HK_mini_figurines_main.png?crop=center&height=600&v=1661370498&width=900" alt="Hollow Knight Figurines" loading="lazy"/>
+          </div>
+          <div class="store-details">
+            <h3>Hollow Knight Mini Figurines</h3>
+            <p class="price">$88.99</p>
+            <button class="btn-buy" data-name="Hollow Knight Figurines" data-price="88.99"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+        <div class="store-card reveal">
+          <div class="store-img-wrap">
+            <img src="https://www.fangamer.com/cdn/shop/files/product_StP_nightmares_embrace_longsleeve_main.png?crop=center&height=600&v=1737667131&width=900" alt="Slay the Princess" loading="lazy"/>
+            <span class="store-badge">Limited</span>
+          </div>
+          <div class="store-details">
+            <h3>Slay the Princess: Nightmare's Embrace Long Sleeve</h3>
+            <p class="price">$44.99</p>
+            <button class="btn-buy" data-name="Slay the Princess Long Sleeve" data-price="44.99"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <button class="store-arrow right" id="storeRight"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </section>
+
+  <!-- CART SIDEBAR -->
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3><i class="fas fa-shopping-cart"></i> Your Cart</h3>
+      <button id="cartClose"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <div class="cart-empty">
+        <i class="fas fa-ghost"></i>
+        <p>Your cart is haunted by emptiness.</p>
+      </div>
+    </div>
+    <div class="cart-footer" id="cartFooter" style="display:none">
+      <div class="cart-total">Total: <span id="cartTotal">$0.00</span></div>
+      <button class="btn-checkout">Proceed to Checkout</button>
+    </div>
+  </div>
+  <div class="overlay" id="overlay"></div>
+
+  <!-- LOGIN MODAL -->
+  <div class="modal" id="loginModal">
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose"><i class="fas fa-times"></i></button>
+      <div class="modal-logo">GR!M<span>'S</span> LAIR</div>
+      <div class="modal-tabs">
+        <button class="tab-btn active" data-tab="signin">Sign In</button>
+        <button class="tab-btn" data-tab="signup">Sign Up</button>
+      </div>
+
+      <div class="tab-content active" id="signin">
+        <div class="input-group">
+          <label>Email</label>
+          <input type="email" placeholder="you@example.com" />
+        </div>
+        <div class="input-group">
+          <label>Password</label>
+          <input type="password" placeholder="••••••••" />
+          <button class="toggle-pw"><i class="fas fa-eye"></i></button>
+        </div>
+        <a href="#" class="forgot-pw">Forgot password?</a>
+        <button class="btn-primary full">Sign In</button>
+        <div class="modal-divider"><span>or continue with</span></div>
+        <div class="social-btns">
+          <button class="social-btn"><i class="fab fa-google"></i> Google</button>
+          <button class="social-btn"><i class="fab fa-discord"></i> Discord</button>
+        </div>
+      </div>
+
+      <div class="tab-content" id="signup">
+        <div class="input-group">
+          <label>Username</label>
+          <input type="text" placeholder="GrimReaper42" />
+        </div>
+        <div class="input-group">
+          <label>Email</label>
+          <input type="email" placeholder="you@example.com" />
+        </div>
+        <div class="input-group">
+          <label>Password</label>
+          <input type="password" placeholder="••••••••" />
+          <button class="toggle-pw"><i class="fas fa-eye"></i></button>
+        </div>
+        <button class="btn-primary full">Create Account</button>
+        <div class="modal-divider"><span>or continue with</span></div>
+        <div class="social-btns">
+          <button class="social-btn"><i class="fab fa-google"></i> Google</button>
+          <button class="social-btn"><i class="fab fa-discord"></i> Discord</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast"></div>
+
+  <!-- BACK TO TOP -->
+  <button class="back-top" id="backTop" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">GR!M<span>'S</span> LAIR</div>
+        <p>Your underground hub for all things gaming. Play hard, die trying.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Discord"><i class="fab fa-discord"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" aria-label="Twitch"><i class="fab fa-twitch"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <a href="#games">Games</a>
+          <a href="#newswire">Newswire</a>
+          <a href="#community">Community</a>
+          <a href="#store">Store</a>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <a href="#">Help Center</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Returns</a>
+          <a href="#">Track Order</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Policy</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 GR!M's LAIR. All rights reserved.</p>
+      <p>Built by gamers, for gamers.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
